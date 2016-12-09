@@ -1,0 +1,130 @@
+body{
+  min-height: 100%;
+  padding:0;
+  margin:0;
+  font-family: sans-serif;
+  font-weight: 600;
+  color:#fff;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+p{
+  margin:0;
+  padding: 15px;
+}
+#head-page{
+  height:100vh;
+}
+#head-navigation{
+  width:100%;
+  background-color: lightgreen;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#logo-link{
+  height:75px;
+  width:100px;
+  text-align: center;
+  line-height: 75px;
+  background-color: cornflowerblue;
+}
+#logo-link:hover{
+  background-color: #5785d6;
+}
+#page-name{
+  height:75px;
+  min-width:150px;
+  text-align: center;
+  line-height: 75px;
+  background-color: crimson;
+}
+.button-wrap{
+  margin-left:auto;
+}
+.button{
+  height:75px;
+  background-color: deepskyblue;
+  color:white;
+  text-align:center;
+  line-height:75px;
+  font-weight: 600;
+  width:100px;
+}
+.button:hover{
+  cursor: pointer;
+  background-color:#00b8f7;
+}
+.dropdown-content{
+  position:absolute;
+  width:100px;
+  display:none;
+  flex-direction: column;
+  text-align: center;
+  background-color: DeepSkyBlue;
+  color:white;
+  font-family: sans-serif;
+  font-weight:300;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a{
+  height:35px;
+  line-height:35px;
+  background-color: #00b8f7;
+}
+.dropdown-content a:hover{
+  background-color:#00abe5;
+}
+
+.dropdown-content:hover .dropbtn{
+  background-color:#00b8f7;
+}
+#head-img{
+  height:calc(100vh - 75px);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#body-content{
+  background-color: #f9f9f9;
+  color:black;
+}
+#left-page{
+  width:250px;
+  height:inherit;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#mid-page{
+  width:250px;
+  height:inherit;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#footer{
+  height:75px;
+  background-color:lightgreen;
+  color:#000;
+  padding:15px;
+}
+
+/**** flex-stuff ****/
+
+#head-navigation{
+  display:flex;
+}
+.button-wrap{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+#body-content{
+  display:flex;
+}
+#left-page{
+  flex-grow:1;
+  margin:25px;
+}
+#mid-page{
+  flex-grow:3;
+  margin:25px;
+}
